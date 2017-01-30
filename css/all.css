@@ -20,6 +20,7 @@ img {
 .col {
 	width: 300px;
 	display: inline-block;
+	vertical-align: top;
 }
 
 p {
