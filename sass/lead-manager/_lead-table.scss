@@ -1,0 +1,109 @@
+.lead-table {
+	width: 100%;
+	background: #ededed;
+
+	thead {
+		background: #f8f8f8;
+	}
+
+	th,
+	td {
+		padding: 12px 5px 12px 18px;
+		border: none;
+
+		&:not(:first-child) {
+			border-left: 1px solid #d5d5d5;
+		}
+	}
+
+	th {
+		text-align: left;
+		font-size: 14px;
+		font-weight: normal;
+	}
+
+	td {
+		font-weight: 300;
+
+		&:nth-child(2){
+			font-weight: normal;
+		}
+	}
+
+	tr {
+		&:nth-child(2n) td {
+			background: #f6f6f6;
+		}
+
+		&:hover {
+			td {
+				background: #f0f7fd;
+			}
+		}
+	}
+
+	.label {
+		display: inline-block;
+		padding: 0 9px;
+		color: $color-white;
+		border-radius: 9px;
+		font-size: 9px;
+		line-height: 18px;
+		white-space: nowrap;
+		
+		&--green {
+			background: linear-gradient(to right, #17a11a 0%,#46ca4b 100%);
+		}
+
+		&--red {
+			background: linear-gradient(to right, #b31900 0%,#d54800 100%);
+		}
+
+		&--violet {
+			background: linear-gradient(to right, #515282 0%,#8e8fb6 100%);
+		}
+	}
+
+	.time {
+		font-size: 9px;
+	}
+
+	.review {
+		color: $color-blue-darker;
+	}
+	.cancel {
+		color: $color-red;
+	}
+
+	[class^="icon-"] {
+		font-size: 11px;
+		margin-right: 6px;
+		vertical-align: middle;
+	}
+
+	.icon-success {
+		color: $color-green;
+	}
+	.icon-in-progress {
+		color: $color-yellow;
+	}
+	.icon-sad {
+		color: #494949;
+	}
+	.icon-fail {
+		color: $color-red;
+	}
+	.icon-complete {
+		color: #626262;
+	}
+	.icon-review {
+		color: $color-blue-darker;
+	}
+
+	&__pagination {
+		text-align: center;
+		font-size: 12px;
+		margin: 38px 0 0;
+	}
+}
+

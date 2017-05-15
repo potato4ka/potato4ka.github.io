@@ -1,0 +1,201 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 150;
+	justify-content: center;
+	align-items: center;
+	color: #333;
+	font-weight: 300;
+	display: none;
+
+	&.open {
+		display: flex;
+	}
+
+	&__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0,0,0,0.2);
+	}
+
+	&__box {
+		position: relative;
+		width: 700px;
+		background: #e9e9e9;
+		box-shadow: $shadow;
+		border-radius: $radius;
+		max-height: 616px;
+		display: flex;
+		flex-direction: column;
+
+		@include until($bp-medium) {
+			width: auto;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		top: 11px;
+		right: 11px;
+		color: #b2b2b2;
+		text-decoration: none;
+		z-index: 2;
+		font-size: 12px;
+	}
+
+	&__header {
+		background: $color-white;
+		box-shadow: $shadow;
+
+		border-radius: $radius $radius 0 0;
+		position: relative;
+	}
+
+	&__header-wrap {
+		display: flex;
+		box-sizing: border-box;
+		justify-content: space-between;
+		align-items: flex-end;
+		width: 100%;
+		padding: 30px 50px 22px;
+
+		@include until($bp-medium) {
+			display: block;
+		}
+	}
+
+	h2 {
+		font-weight: 100;
+		font-size: 24px;
+		margin: 0;
+
+		@include until($bp-medium) {
+			margin-bottom: 20px;
+		}
+
+		span {
+			font-weight: 300;
+			font-size: 30px;
+		}
+	}
+
+	&__nav {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 10px;
+		font-size: 15px;
+
+		li {
+			display: inline-block;
+			margin-left: 25px;
+
+			@include until($bp-medium) {
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+
+		a {
+			text-decoration: none;
+			border-bottom: 1px dashed $color-blue;
+		}
+	}
+
+	&__footer {
+		background: #d3d3d3;
+		border-top: 1px solid #b4b4b4;
+		border-radius: 0 0 $radius $radius;
+		display: flex;
+		box-sizing: border-box;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 20px 50px;
+		font-size: 26px;
+
+		@include until($bp-medium) {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	&__status {
+		font-size: 13px;
+		margin: 0;
+
+		@include until($bp-medium) {
+			margin-bottom: 20px;
+		}
+
+		span {
+			color: #7f7f7f;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 7px;
+			font-size: 18px;
+
+			&.success {
+				color: $color-green;
+			}
+		}
+
+		strong {
+			color: $color-black;
+		}
+	}
+
+	&__footer-close {
+		font-size: 24px;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__body {
+		padding: 25px 50px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__headline {
+		border-bottom: 1px solid #a3a3a3;
+		padding-bottom: 18px;
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+
+		h3 {
+			margin: 0;
+			text-transform: uppercase;
+			font-size: 13px;
+			font-weight: 300;
+
+			span {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 27px;
+				font-size: 18px;
+			}
+		}
+
+		.date {
+			font-weight: bold;
+			color: #999;
+			font-size: 9px;
+		}
+	}
+
+	&__content {
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+}

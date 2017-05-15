@@ -1,0 +1,34 @@
+.help {
+	position: fixed;
+	left: 53px;
+	bottom: 76px;
+	background: $color-blue;
+	border-radius: 50%;
+	padding: 4px;
+	border: 1px solid $color-white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	text-decoration: none;
+	color: $color-white;
+
+	span {
+		display: block;
+		@extend %icon-base-styles;
+		@extend .icon-call;
+		width: 25px;
+		height: 25px;
+		text-align: center;
+		padding: 4px;
+		border: 2px solid $color-white;
+		border-radius: 50%;
+		font-size: 0;
+
+
+		&:before {
+			font-size: 25px;
+		}
+	}
+
+	&:hover {
+		animation: help 3s infinite;
+	}
+}

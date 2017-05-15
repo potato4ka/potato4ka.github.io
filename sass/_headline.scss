@@ -1,0 +1,212 @@
+.headline {
+	padding: 22px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include until($bp-xl) {
+		display: block;
+	}
+
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include until($bp-xl) {
+			margin-bottom: 20px;
+		}
+
+		@include until($bp-medium) {
+			display: block;
+		}
+	}
+
+	h1 {
+		margin: 0 60px 0 0;
+		font-size: 51px;
+		font-weight: 100;
+
+		@include until($bp-xl) {
+			margin: 0;
+		}
+
+		@include until($bp-medium) {
+			margin-bottom: 20px;
+			font-size: 40px;
+		}
+	}
+
+	.view-link {
+		font-size: 15px;
+		text-decoration: none;
+
+		span {
+			text-decoration: underline;
+		}
+
+		em {
+			margin-left: 8px;
+			vertical-align: bottom;
+			display: inline-block;
+		}
+
+		&:hover {
+			span {
+				text-decoration: none;
+			}
+		}
+	}
+
+	form {
+		flex: 1 0 auto;
+		text-align: right;
+
+		@include until($bp-xl) {
+			text-align: left;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		@include until($bp-medium) {
+			display: block;
+		}
+	}
+}
+
+.select-field {
+	margin-left: 18px;
+	background: $color-white;
+	border: 1px solid #afafaf;
+	border-radius: 18px;
+	display: inline-block;
+	position: relative;
+
+	@include until($bp-xl) {
+		flex: 1 0 auto;
+		margin-left: 0;
+		margin-right: 20px;
+	}
+
+	@include until($bp-medium) {
+		margin-right: 0;
+		margin-bottom: 20px;
+		display: block;
+		border-radius: 22px;
+	}
+
+	select {
+		height: 26px;
+		line-height: 26px;
+		font-size: 15px;
+		background: none;
+		border: none;
+		outline: none;
+		appearance: none;
+		padding: 0 40px 0 20px;
+
+		@include until($bp-xl) {
+			width: 100%;
+		}
+
+		@include until($bp-medium) {
+			height: 34px;
+		}
+	}
+
+	&--icon {
+		select {
+			padding-left: 40px;
+		}
+	}
+
+	&__icon,
+	&__opener {
+		position: absolute;
+		bottom: 1px;
+		top: 1px;
+		width: 20px;
+		background: $color-white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+	}
+
+	&__opener {
+		right: 1px;
+		padding-right: 12px;
+		@extend %icon-base-styles;
+		@extend .icon-arrow-drop;
+		color: $color-blue;
+
+		&:before {
+			font-size: 11px;
+		}
+	}
+
+	&__icon {
+		left: 1px;
+		padding-left: 12px;
+		color: #999;
+		text-align: center;
+
+		&:before {
+			font-size: 14px;
+		}
+	}
+}
+
+.headline-search {
+	display: inline-block;
+	position: relative;
+	margin-left: 18px;
+	background: #9b9b9b;
+	border-radius: 15px;
+	padding: 0 10px;
+	color: $color-white;
+	@extend %icon-base-styles;
+	@extend .icon-search;
+
+	@include until($bp-xl) {
+		flex: 1 0 auto;
+		margin-left: 0;
+	}
+
+	@include until($bp-medium) {
+		display: block;
+	}
+
+	&:before {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 14px;
+		width: 20px;
+		text-align: center;
+		line-height: 30px;
+	}
+	
+	input {
+		border: none;
+		background: none;
+		font-size: 15px;
+		line-height: 30px;
+		padding: 0 0 0 38px;
+		width: 166px;
+		outline: none;
+		color: $color-white;
+
+		@include until($bp-xl) {
+			width: 100%;
+		}
+
+		@include until($bp-medium) {
+			line-height: 34px;
+		}
+
+		&::placeholder {
+			color: $color-white;
+		}
+	}
+}

@@ -1,0 +1,65 @@
+body {
+	margin: 0;
+	color: $color-black;
+	font: 12px Roboto, sans-serif;
+	background: #e9e9e9;
+}
+
+img {
+	border-style: none;
+}
+
+a {
+	color: $color-blue;
+}
+
+input,
+textarea,
+select {
+	font: 100% Roboto, sans-serif;
+}
+
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p {
+	margin: 0 0 0.5em;
+}
+
+@font-face {
+	font-family: $icon_font_name;
+	src: url('../fonts/icons.eot');
+	src: url('../fonts/icons.eot?#iefix') format('eot'),
+	url('../fonts/icons.woff') format('woff'),
+	url('../fonts/icons.ttf') format('truetype'),
+	url('../fonts/icons.svg#icons') format('svg');
+}
+
+%icon-base-styles {
+	line-height: 1;
+
+	&:before {
+		font-family: $icon_font_name;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		text-decoration: none;
+		text-transform: none;
+	}
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	@extend %icon-base-styles;
+}

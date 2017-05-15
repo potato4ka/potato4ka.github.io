@@ -1,0 +1,52 @@
+.details {
+	background: #f6f6f6;
+	position: relative;
+
+	&__wrap {
+		display: flex;
+		padding: 26px 50px;
+		box-sizing: border-box;
+		width: 100%;
+		justify-content: space-between;
+
+		@include until($bp-medium) {
+			display: block;
+		}
+	}
+
+
+	&__close {
+		position: absolute;
+		top: 18px;
+		right: 14px;
+		color: #c5c5c5;
+		font-size: 8px;
+		text-decoration: none;
+	}
+
+	&__col {
+		flex: 1;
+		margin-right: 40px;
+	}
+
+	dl {
+		margin: 0;
+		font-size: 13px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+
+	dt {
+		padding-bottom: 8px;
+		width: 40%;
+		font-weight: normal;
+	}
+
+	dd {
+		margin: 0;
+		width: 60%;
+		padding-bottom: 8px;
+		padding-top: 2px;
+	}
+}

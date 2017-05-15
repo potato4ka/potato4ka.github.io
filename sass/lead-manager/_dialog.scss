@@ -1,0 +1,126 @@
+.dialog {
+	$root: &;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+
+	&__title {
+		margin: 20px 0 15px;
+
+		h3 {
+			display: inline-block;
+			margin: 0 6px 0 0;
+			font-size: 13px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+
+	&__day {
+		font-weight: bold;
+		color: #999;
+		font-size: 9px;
+		text-transform: uppercase;
+	}
+
+	&__row {
+		display: flex;
+		width: 70%;
+		margin: 7px 0;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__symbol {
+		display: block;
+		margin-right: 10px;
+		position: relative;
+	}
+
+	&__icon {
+		@extend %icon-base-styles;
+		border-radius: 50%;
+		color: $color-white;
+		text-align: center;
+		line-height: 25px;
+		width: 26px;
+		height: 26px;
+		display: block;
+	}
+
+	&__icon-call {
+		@extend .icon-phone;
+		background: $color-green;
+	}
+
+	&__icon-email {
+		@extend .icon-envelope;
+		background: $color-blue;
+	}
+
+	&__icon-sms {
+		@extend .icon-sms;
+		background: #e7682a;
+	}
+
+	&__rec {
+		@extend %icon-base-styles;
+		@extend .icon-record;
+		position: absolute;
+		top: -5px;
+		right: -5px;
+		font-size: 11px;
+		line-height: 7px;
+		color: #ff4800;
+		padding: 1px;
+		background: $color-white;
+		border-radius: 2px;
+	}
+
+	&__summary {
+		padding: 5px 13px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		font-size: 13px;
+		font-weight: 300;
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&--new {
+		#{$root}__summary {
+			background: #f6f6f6;
+			border-radius: $radius;
+		}
+	}
+
+	&--answer {
+		flex-direction: row-reverse;
+		align-self: flex-end;
+
+		#{$root}__symbol {
+			margin-right: 0;
+			margin-left: 10px;
+		}
+	}
+
+	&--info {
+		margin: 44px 0;
+		width: 75%;
+
+		#{$root}__summary {
+			background: #effafe;
+			border-radius: $radius;
+			padding-top: 18px;
+			padding-bottom: 18px;
+		}
+	}
+}
