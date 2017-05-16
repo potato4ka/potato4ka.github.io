@@ -3,11 +3,8 @@
 	position: relative;
 
 	&__wrap {
-		display: flex;
 		padding: 26px 50px;
-		box-sizing: border-box;
-		width: 100%;
-		justify-content: space-between;
+		@extend .flexible-row;
 
 		@include until($bp-medium) {
 			display: block;

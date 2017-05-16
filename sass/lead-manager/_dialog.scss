@@ -26,9 +26,15 @@
 	&__row {
 		display: flex;
 		width: 70%;
-		margin: 7px 0;
-		align-items: center;
+		margin: 2px 0;
+		align-items: flex-start;
 		justify-content: space-between;
+
+		&:hover {
+			#{$root}__summary {
+				background: $color-white;
+			}
+		}
 	}
 
 	&__symbol {
@@ -70,7 +76,7 @@
 		top: -5px;
 		right: -5px;
 		font-size: 11px;
-		line-height: 7px;
+		line-height: 6px;
 		color: #ff4800;
 		padding: 1px;
 		background: $color-white;
@@ -78,13 +84,11 @@
 	}
 
 	&__summary {
+		@extend .flexible-row;
 		padding: 5px 13px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
 		font-size: 13px;
 		font-weight: 300;
+		border-radius: $radius;
 
 		a {
 			text-decoration: none;
@@ -98,7 +102,6 @@
 	&--new {
 		#{$root}__summary {
 			background: #f6f6f6;
-			border-radius: $radius;
 		}
 	}
 
@@ -112,8 +115,9 @@
 		}
 	}
 
+	&--message,
 	&--info {
-		margin: 44px 0;
+		margin: 40px 0;
 		width: 75%;
 
 		#{$root}__summary {
@@ -121,6 +125,129 @@
 			border-radius: $radius;
 			padding-top: 18px;
 			padding-bottom: 18px;
+		}
+	}
+
+	&--message {
+		#{$root}__summary {
+			display: block;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		#{$root}__message-title {
+			position: relative;
+			border-bottom: 1px solid #d7e1e4;
+			padding: 0 16px 16px;
+		}
+
+		#{$root}__message-heading {
+			margin-bottom: 3px;
+
+			.icon-open-email {
+				margin-left: 3px;
+				color: #004eff;
+			}
+		}
+
+		#{$root}__message-body {
+			padding: 16px 16px 0;
+		}
+	}
+
+	&__notification {
+		background: #d3d3d3;
+		margin: 20px 0;
+		border-radius: $radius;
+		padding: 5px 14px 5px 10px;
+		@extend .flexible-row;
+	}
+
+	&__notification-text {
+		font-weight: 300;
+		margin-right: 10px;
+		flex: 1;
+	}
+
+	&__attention-icon {
+		display: inline-block;
+		border-radius: 50%;
+		color: #d3d3d3;
+		background: #7f7f7f;
+		width: 12px;
+		text-align: center;
+		height: 12px;
+		font-weight: bold;
+		margin-right: 18px;
+		vertical-align: middle;
+		font-size: 9px;
+	}
+
+	&__notification-number {
+		display: inline-block;
+		margin-left: 6px;
+		font-weight: bold;
+		background: #bdbdbd;
+		line-height: 18px;
+		border-radius: 9px;
+		font-size: 9px;
+		vertical-align: middle;
+		padding: 0 8px;
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		margin-bottom: 32px;
+
+		.btn {
+			margin-right: 4px;
+		}
+	}
+
+	&__buttons-label {
+		font-weight: bold;
+		margin: 0 12px 0 0;
+	}
+
+	&--textfield {
+		width: 100%;
+
+		#{$root}__summary {
+			background: #f6f6f6;
+			padding: 12px;
+			position: relative;
+			display: block;
+		}
+
+		label {
+			display: block;
+			margin: 0 15px 5px 0;
+			font-size: 15px;
+		}
+
+		textarea {
+			margin-bottom: 10px;
+			min-height: 90px;
+		}
+	}
+
+	&__field-close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		color: #acacac;
+		font-size: 9px;
+	}
+
+	&--replied {
+		#{$root}__summary {
+			box-shadow: 0 0 2px $color-blue;
+			background: $color-white;
+			color: $color-black;
+		}
+		#{$root}__day {
+			color: $color-black;
 		}
 	}
 }

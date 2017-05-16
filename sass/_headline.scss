@@ -1,17 +1,13 @@
 .headline {
+	@extend .flexible-row;
 	padding: 22px 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 
 	@include until($bp-xl) {
 		display: block;
 	}
 
 	&__title {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		@extend .flexible-row;
 
 		@include until($bp-xl) {
 			margin-bottom: 20px;
@@ -66,6 +62,8 @@
 			text-align: left;
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
+			width: 100%;
 		}
 
 		@include until($bp-medium) {

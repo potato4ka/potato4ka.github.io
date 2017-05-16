@@ -5,10 +5,7 @@
 	font-size: 12px;
 
 	.container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 100%;
+		@extend .flexible-row;
 
 		@include until($bp-medium) {
 			display: block;

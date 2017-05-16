@@ -16,7 +16,7 @@ a {
 input,
 textarea,
 select {
-	font: 100% Roboto, sans-serif;
+	font: 15px Roboto, sans-serif;
 }
 
 form,
@@ -24,6 +24,20 @@ fieldset {
 	margin: 0;
 	padding: 0;
 	border-style: none;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	border: 1px solid #bdbdbd;
+	border-radius: $radius;
+	padding: 6px 0 6px 10px;
+	overflow: auto;
+	resize: none;
+	box-sizing: border-box;
+	font-size: 15px;
 }
 
 table {

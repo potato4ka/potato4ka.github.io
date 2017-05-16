@@ -1,3 +1,15 @@
 .rel {
 	position: relative;
 }
+
+.flexible-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.blue {
+	color: $color-blue;
+}

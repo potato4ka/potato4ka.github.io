@@ -112,12 +112,8 @@
 		background: #d3d3d3;
 		border-top: 1px solid #b4b4b4;
 		border-radius: 0 0 $radius $radius;
-		display: flex;
-		box-sizing: border-box;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
-		padding: 20px 50px;
+		@extend .flexible-row;
+		padding: 28px 50px;
 		font-size: 26px;
 
 		@include until($bp-medium) {
@@ -169,9 +165,7 @@
 	&__headline {
 		border-bottom: 1px solid #a3a3a3;
 		padding-bottom: 18px;
-		display: flex;
-		width: 100%;
-		justify-content: space-between;
+		@extend .flexible-row;
 
 		h3 {
 			margin: 0;
@@ -197,5 +191,6 @@
 	&__content {
 		overflow-y: auto;
 		overflow-x: hidden;
+		padding-right: 10px;
 	}
 }

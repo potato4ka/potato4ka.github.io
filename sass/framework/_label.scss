@@ -1,0 +1,22 @@
+.label {
+	display: inline-block;
+	padding: 0 9px;
+	color: $color-white;
+	border-radius: 9px;
+	font-size: 9px;
+	line-height: 18px;
+	white-space: nowrap;
+	font-weight: 300;
+
+	&--green {
+		background: linear-gradient(to right, #17a11a 0%,#46ca4b 100%);
+	}
+
+	&--red {
+		background: linear-gradient(to right, #b31900 0%,#d54800 100%);
+	}
+
+	&--violet {
+		background: linear-gradient(to right, #515282 0%,#8e8fb6 100%);
+	}
+}

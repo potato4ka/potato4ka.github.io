@@ -1,0 +1,51 @@
+.btn {
+	display: inline-block;
+	border-radius: $radius;
+	font-weight: normal;
+	color: $color-white;
+	height: 31px;
+	border: none;
+	line-height: 27px;
+	padding: 2px 19px;
+	cursor: pointer;
+
+	&--blue {
+		background: $color-blue;
+
+		&:hover {
+			background: lighten($color-blue, 10%);
+		}
+	}
+
+	&--orange {
+		background: $color-orange;
+
+		&:hover {
+			background: lighten($color-orange, 10%);
+		}
+	}
+
+	&--naked {
+		background: none;
+		text-decoration: underline;
+		color: #707070;
+
+		&:hover {
+			color: $color-black;
+		}
+	}
+
+	[class^="icon-"],
+	[class*=" icon-"] {
+		margin-right: 5px;
+		display: inline-block;
+		vertical-align: baseline;
+		line-height: 1;
+	}
+
+	&:disabled {
+		opacity: 0.2;
+		pointer-events: none;
+		cursor: default;
+	}
+}
