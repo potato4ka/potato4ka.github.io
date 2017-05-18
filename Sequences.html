@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>SalesRep</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+	<link type="text/css" rel="stylesheet" href="css/main.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="page">
+<header class="header">
+	<div class="container">
+		<strong class="logo">
+			<a href="#"><img src="images/logo.png" alt="SalesRep"/></a>
+		</strong>
+		<nav class="navigation">
+			<ul>
+				<li><a href="#"><span class="icon-dashboard"></span> Dashboard</a></li>
+				<li class="active"><a href="#"><span class="icon-leads"></span>Leads</a></li>
+				<li><a href="#"><span class="icon-sequences"></span>Sequences</a></li>
+				<li><a href="#"><span class="icon-reports"></span>Reports</a></li>
+				<li><a href="#"><span class="icon-settings"></span>Settings</a></li>
+			</ul>
+		</nav>
+		<div class="user-tools toggle-box">
+			<div class="user-tools__name toggle-box__opener"><a href="#">Dmitri <span class="icon-arrow-drop"></span></a></div>
+			<div class="tools-tooltip toggle-box__content">
+				<ul class="tools-tooltip__list">
+					<li><a href="#">User Settings</a></li>
+					<li><a href="#">Sign Out</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-nav toggle-box">
+			<a href="#" class="toggle-box__opener mobile-nav__opener"><span>Open/Close</span></a>
+			<div class="toggle-box__content mobile-nav__content">
+				<ul>
+					<li><a href="#"><span class="icon-dashboard"></span> Dashboard</a></li>
+					<li class="active"><a href="#"><span class="icon-leads"></span>Leads</a></li>
+					<li><a href="#"><span class="icon-sequences"></span>Sequences</a></li>
+					<li><a href="#"><span class="icon-reports"></span>Reports</a></li>
+					<li><a href="#"><span class="icon-settings"></span>Settings</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="main">
+	<div class="container">
+		<div class="headline">
+			<div class="headline__title headline--simple">
+				<h1>Sequences</h1>
+				<button class="btn btn--blue btn--big">Create a new sequence </button>
+			</div>
+		</div>
+		<div class="sequences">
+			<div class="sequences__col">
+				<div class="sequences__item">
+					<div class="sequences__header">
+						<h2><span class="icon-sequences"></span> Follow up #1</h2>
+					</div>
+					<div class="sequences__summary">
+						<dl>
+							<dt>Days:</dt>
+							<dd>23</dd>
+						</dl>
+						<dl>
+							<dt>Calls:</dt>
+							<dd>25</dd>
+						</dl>
+						<dl>
+							<dt>Emails:</dt>
+							<dd>25</dd>
+						</dl>
+						<dl>
+							<dt>SMS:</dt>
+							<dd>15</dd>
+						</dl>
+					</div>
+					<div class="sequences__calendar">
+						<div class="sequences__row">
+							<div class="sequences__day">Day 1</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+									<span class="badge__rec"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--email"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 2</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 4</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+									<span class="badge__rec"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--email"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 7</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+									<span class="badge__rec"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--email"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 9</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 10</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+									<span class="badge__rec"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--email"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sequences__col">
+				<div class="sequences__item">
+					<div class="sequences__header">
+						<h2><span class="icon-sequences"></span> Follow up #2</h2>
+					</div>
+					<div class="sequences__summary">
+						<dl>
+							<dt>Days:</dt>
+							<dd>23</dd>
+						</dl>
+						<dl>
+							<dt>Calls:</dt>
+							<dd>25</dd>
+						</dl>
+						<dl>
+							<dt>Emails:</dt>
+							<dd>25</dd>
+						</dl>
+						<dl>
+							<dt>SMS:</dt>
+							<dd>15</dd>
+						</dl>
+					</div>
+					<div class="sequences__calendar">
+						<div class="sequences__row">
+							<div class="sequences__day">Day 1</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+									<span class="badge__rec"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--email"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 2</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 4</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+									<span class="badge__rec"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--email"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 7</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+									<span class="badge__rec"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--email"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 9</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 10</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+									<span class="badge__rec"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--email"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sequences__col">
+				<div class="sequences__item">
+					<div class="sequences__header">
+						<h2><span class="icon-sequences"></span> Follow up #3</h2>
+					</div>
+					<div class="sequences__summary">
+						<dl>
+							<dt>Days:</dt>
+							<dd>23</dd>
+						</dl>
+						<dl>
+							<dt>Calls:</dt>
+							<dd>25</dd>
+						</dl>
+						<dl>
+							<dt>Emails:</dt>
+							<dd>25</dd>
+						</dl>
+						<dl>
+							<dt>SMS:</dt>
+							<dd>15</dd>
+						</dl>
+					</div>
+					<div class="sequences__calendar">
+						<div class="sequences__row">
+							<div class="sequences__day">Day 1</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+									<span class="badge__rec"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--email"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 2</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 4</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+									<span class="badge__rec"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--email"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 7</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+									<span class="badge__rec"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--email"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 9</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+						<div class="sequences__row">
+							<div class="sequences__day">Day 10</div>
+							<div class="sequences__icons">
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+									<span class="badge__rec"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--sms"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--email"></span>
+								</span>
+								<span class="badge">
+									<span class="badge__icon badge--call"></span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<ul class="footer__nav">
+			<li><a href="#">Terms of Service</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+		</ul>
+		<p class="footer__info">© 2017 SalesRep.ai.  All rights reserved. <a href="#" class="footer__logo"><img src="images/footer-logo.png" alt="SalesRep"/></a></p>
+	</div>
+</footer>
+<a href="#" class="help"><span>Call for help</span></a>
+</div>
+
+</body>
+</html>

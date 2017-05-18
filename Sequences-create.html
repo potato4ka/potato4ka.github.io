@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>SalesRep</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+	<link type="text/css" rel="stylesheet" href="css/main.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="page">
+<header class="header">
+	<div class="container">
+		<strong class="logo">
+			<a href="#"><img src="images/logo.png" alt="SalesRep"/></a>
+		</strong>
+		<nav class="navigation">
+			<ul>
+				<li><a href="#"><span class="icon-dashboard"></span> Dashboard</a></li>
+				<li class="active"><a href="#"><span class="icon-leads"></span>Leads</a></li>
+				<li><a href="#"><span class="icon-sequences"></span>Sequences</a></li>
+				<li><a href="#"><span class="icon-reports"></span>Reports</a></li>
+				<li><a href="#"><span class="icon-settings"></span>Settings</a></li>
+			</ul>
+		</nav>
+		<div class="user-tools toggle-box">
+			<div class="user-tools__name toggle-box__opener"><a href="#">Dmitri <span class="icon-arrow-drop"></span></a></div>
+			<div class="tools-tooltip toggle-box__content">
+				<ul class="tools-tooltip__list">
+					<li><a href="#">User Settings</a></li>
+					<li><a href="#">Sign Out</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-nav toggle-box">
+			<a href="#" class="toggle-box__opener mobile-nav__opener"><span>Open/Close</span></a>
+			<div class="toggle-box__content mobile-nav__content">
+				<ul>
+					<li><a href="#"><span class="icon-dashboard"></span> Dashboard</a></li>
+					<li class="active"><a href="#"><span class="icon-leads"></span>Leads</a></li>
+					<li><a href="#"><span class="icon-sequences"></span>Sequences</a></li>
+					<li><a href="#"><span class="icon-reports"></span>Reports</a></li>
+					<li><a href="#"><span class="icon-settings"></span>Settings</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="main">
+	<div class="container">
+		<div class="headline">
+			<div class="headline__title headline--simple">
+				<h1>Sequences</h1>
+				<div class="headline__btns">
+					<button class="btn btn--blue btn--big">Save changes</button>
+					<button class="btn btn--grey btn--big">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="create-block">
+		<div class="container">
+			<aside class="create-block__aside">
+				<div class="create-block__aside-holder">
+					<a href="#" class="create-block__button-main">
+						<div class="badge">
+							<div class="badge__icon badge--add"></div>
+						</div>
+						Add a Day Block
+					</a>
+					<a href="#" class="create-block__button">
+						<div class="badge">
+							<div class="badge__icon badge--call"></div>
+							<span class="badge__rec"></span>
+						</div>
+						Make a Call + Voicemail
+					</a>
+					<a href="#" class="create-block__button">
+						<div class="badge">
+							<div class="badge__icon badge--call"></div>
+						</div>
+						Make a Phone Call
+					</a>
+					<a href="#" class="create-block__button">
+						<div class="badge">
+							<div class="badge__icon badge--sms"></div>
+						</div>
+						Send a Text Message (SMS)
+					</a>
+					<a href="#" class="create-block__button">
+						<div class="badge">
+							<div class="badge__icon badge--email"></div>
+						</div>
+						Send an Email
+					</a>
+				</div>
+			</aside>
+			<div class="create-block__main">
+				<div class="create-block__title">
+					<h2><span class="icon-sequences"></span> Follow up #1</h2>
+				</div>
+				<div class="day-block__container">
+					<div class="day-block">
+						<div class="day-block__heading">
+							<div class="day-block__heading-text">
+								<h3>Day 1</h3>
+								<p>Starts in 2 days</p>
+							</div>
+							<ul class="day-block__tools">
+								<li><a href="#" class="icon-copy"></a></li>
+								<li><a href="#" class="icon-move"></a></li>
+								<li><a href="#" class="icon-trash"></a></li>
+								<li><a href="#" class="icon-minus"></a></li>
+							</ul>
+						</div>
+						<div class="day-block__row day-block--new">
+							<div class="flexible-row">
+								<div class="badge">
+									<div class="badge__icon badge--call"></div>
+									<span class="badge__rec"></span>
+								</div>
+								<div class="day-block__summary">
+									<div class="day-block__text">Call + Voicemail</div>
+									<div class="day-block__info"><strong>Starts</strong> in 30-240 mins</div>
+								</div>
+							</div>
+						</div>
+						<div class="day-block__row">
+							<div class="flexible-row">
+								<div class="badge">
+									<div class="badge__icon badge--email"></div>
+								</div>
+								<div class="day-block__summary">
+									<div class="day-block__text">Email</div>
+									<div class="day-block__info"><strong>after</strong> 30-90 mins</div>
+								</div>
+							</div>
+						</div>
+						<div class="day-block__row">
+							<div class="flexible-row">
+								<div class="badge">
+									<div class="badge__icon badge--sms"></div>
+								</div>
+								<div class="day-block__summary">
+									<div class="day-block__text">SMS</div>
+									<div class="day-block__info"><strong>after</strong> 30-90 mins</div>
+								</div>
+							</div>
+						</div>
+						<div class="day-block__row day-block--new">
+							<div class="flexible-row">
+								<div class="badge">
+									<div class="badge__icon badge--call"></div>
+								</div>
+								<div class="day-block__summary">
+									<div class="day-block__text">Phone call</div>
+									<div class="day-block__info"><strong>after</strong> 30-90 mins</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="day-block day-block--drag">
+						<div class="day-block__heading">
+							<div class="day-block__heading-text">
+								<h3>Day 1</h3>
+								<p>Starts in 2 days</p>
+							</div>
+							<ul class="day-block__tools">
+								<li><a href="#" class="icon-copy"></a></li>
+								<li><a href="#" class="icon-move"></a></li>
+								<li><a href="#" class="icon-trash"></a></li>
+								<li><a href="#" class="icon-minus"></a></li>
+							</ul>
+						</div>
+						<div class="day-block__row day-block--new">
+							<div class="flexible-row">
+								<div class="badge">
+									<div class="badge__icon badge--call"></div>
+									<span class="badge__rec"></span>
+								</div>
+								<div class="day-block__summary">
+									<div class="day-block__text">Call + Voicemail</div>
+									<div class="day-block__info"><strong>Starts</strong> in 30-240 mins</div>
+								</div>
+							</div>
+						</div>
+						<div class="day-block__row">
+							<div class="flexible-row">
+								<div class="badge">
+									<div class="badge__icon badge--email"></div>
+								</div>
+								<div class="day-block__summary">
+									<div class="day-block__text">Email</div>
+									<div class="day-block__info"><strong>after</strong> 30-90 mins</div>
+								</div>
+							</div>
+						</div>
+						<div class="day-block__row">
+							<div class="flexible-row">
+								<div class="badge">
+									<div class="badge__icon badge--sms"></div>
+								</div>
+								<div class="day-block__summary">
+									<div class="day-block__text">SMS</div>
+									<div class="day-block__info"><strong>after</strong> 30-90 mins</div>
+								</div>
+							</div>
+						</div>
+						<div class="day-block__row day-block--new">
+							<div class="flexible-row">
+								<div class="badge">
+									<div class="badge__icon badge--call"></div>
+								</div>
+								<div class="day-block__summary">
+									<div class="day-block__text">Phone call</div>
+									<div class="day-block__info"><strong>after</strong> 30-90 mins</div>
+								</div>
+							</div>
+						</div>
+						<div class="day-block__row day-block--add-row">
+							<div class="flexible-row">
+								<span class="day-block__plus">+</span>
+								<div class="day-block__summary">
+									<div class="day-block__text">Drag & drop Actions here</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="day-block__add">Drag &amp; drop <strong>Day Blocks</strong> here</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<ul class="footer__nav">
+			<li><a href="#">Terms of Service</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+		</ul>
+		<p class="footer__info">© 2017 SalesRep.ai.  All rights reserved. <a href="#" class="footer__logo"><img src="images/footer-logo.png" alt="SalesRep"/></a></p>
+	</div>
+</footer>
+<a href="#" class="help"><span>Call for help</span></a>
+</div>
+
+</body>
+</html>
