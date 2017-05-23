@@ -8,6 +8,7 @@
 	line-height: 27px;
 	padding: 2px 19px;
 	cursor: pointer;
+	white-space: nowrap;
 
 	&--blue {
 		background: $color-blue;
@@ -25,6 +26,14 @@
 		}
 	}
 
+	&--grey {
+		background: #8e8e8e;
+
+		&:hover {
+			background: lighten(#8e8e8e, 10%);
+		}
+	}
+
 	&--naked {
 		background: none;
 		text-decoration: underline;
@@ -33,6 +42,11 @@
 		&:hover {
 			color: $color-black;
 		}
+	}
+
+	&--big {
+		height: 34px;
+		font-size: 15px;
 	}
 
 	[class^="icon-"],

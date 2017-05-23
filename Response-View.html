@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>SalesRep</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+	<link type="text/css" rel="stylesheet" href="css/main.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="page">
+<header class="header">
+	<div class="container">
+		<strong class="logo">
+			<a href="#"><img src="images/logo.png" alt="SalesRep"/></a>
+		</strong>
+		<nav class="navigation">
+			<ul>
+				<li><a href="#"><span class="icon-dashboard"></span> Dashboard</a></li>
+				<li class="active"><a href="#"><span class="icon-leads"></span>Leads</a></li>
+				<li><a href="#"><span class="icon-sequences"></span>Sequences</a></li>
+				<li><a href="#"><span class="icon-reports"></span>Reports</a></li>
+				<li><a href="#"><span class="icon-settings"></span>Settings</a></li>
+			</ul>
+		</nav>
+		<div class="user-tools toggle-box">
+			<div class="user-tools__name toggle-box__opener"><a href="#">Dmitri <span class="icon-arrow-drop"></span></a></div>
+			<div class="tools-tooltip toggle-box__content">
+				<ul class="tools-tooltip__list">
+					<li><a href="#">User Settings</a></li>
+					<li><a href="#">Sign Out</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-nav toggle-box">
+			<a href="#" class="toggle-box__opener mobile-nav__opener"><span>Open/Close</span></a>
+			<div class="toggle-box__content mobile-nav__content">
+				<ul>
+					<li><a href="#"><span class="icon-dashboard"></span> Dashboard</a></li>
+					<li class="active"><a href="#"><span class="icon-leads"></span>Leads</a></li>
+					<li><a href="#"><span class="icon-sequences"></span>Sequences</a></li>
+					<li><a href="#"><span class="icon-reports"></span>Reports</a></li>
+					<li><a href="#"><span class="icon-settings"></span>Settings</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="main">
+	<div class="container">
+		<div class="headline">
+			<div class="headline__title">
+				<h1>Lead Manager</h1>
+				<a href="#modal1" class="view-link modal-opener">
+					<span>View Responses</span>
+					<em class="icon-responses"></em>
+				</a>
+			</div>
+			<form action="#">
+				<div class="select-field">
+					<select>
+						<option>All statuses</option>
+						<option>Hot lead</option>
+						<option>At risk</option>
+					</select>
+					<span class="select-field__opener"></span>
+				</div>
+				<div class="select-field select-field--icon">
+					<em class="select-field__icon icon-calendar"></em>
+					<select>
+						<option>Last 30 days</option>
+						<option>Last 60 days</option>
+						<option>Last 90 days</option>
+					</select>
+					<span class="select-field__opener"></span>
+				</div>
+				<div class="headline-search">
+					<input type="search" placeholder="Find a Lead...">
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="message-resp">
+		<div class="container">
+			<div class="message-resp__messages">
+				<div class="message-resp__item">
+					<div class="message-resp__title">
+						<div class="message-resp__heading">
+							<h3>Dmitri Kozhevnikov</h3>
+							<p>786 617 9058</p>
+							<span class="label label--green">Hot Lead</span>
+						</div>
+						<div class="message-resp__info">
+							<span class="day">10 days ago</span>
+							<p>via SMS</p>
+							<div class="badge__icon badge--sms"></div>
+						</div>
+					</div>
+					<div class="message-resp__body">
+						<div class="message-resp__text">
+							<p>Yes - you can call me tomorrow at 4pm. Thanks</p>
+						</div>
+						<button class="btn btn--orange">
+							<span class="icon-sms"></span>
+							Quick reply
+						</button>
+					</div>
+				</div>
+				<div class="message-resp__item">
+					<div class="message-resp__title">
+						<div class="message-resp__heading">
+							<h3>Dmitri Kozhevnikov</h3>
+							<p>786 617 9058</p>
+							<span class="label label--green">Hot Lead</span>
+						</div>
+						<div class="message-resp__info">
+							<span class="day">10 days ago</span>
+							<p>via Email</p>
+							<div class="badge__icon badge-email"></div>
+						</div>
+					</div>
+					<div class="message-resp__body">
+						<div class="message-resp__text">
+							<p>Good day.  Perhaps I could call you later on today when I am mobile and we could discuss.  Perhaps around 5:00 PM CST?</p>
+						</div>
+						<button class="btn btn--blue">
+							<span class="icon-envelope"></span>
+							Quick reply
+						</button>
+					</div>
+				</div>
+				<div class="message-resp__item">
+					<div class="message-resp__title">
+						<div class="message-resp__heading">
+							<h3>Dmitri Kozhevnikov</h3>
+							<p>786 617 9058</p>
+							<span class="label label--green">Hot Lead</span>
+						</div>
+						<div class="message-resp__info">
+							<span class="day">10 days ago</span>
+							<p>via SMS</p>
+							<div class="badge__icon badge--sms"></div>
+						</div>
+					</div>
+					<div class="message-resp__body">
+						<div class="message-resp__text">
+							<p>Yes - you can call me tomorrow at 4pm. Thanks</p>
+						</div>
+						<button class="btn btn--grey" disabled>
+							<span class="icon-sms"></span>
+							Quick reply
+						</button>
+					</div>
+				</div>
+				<div class="message-resp__reply">
+					<div class="badge__icon badge--sms"></div>
+					<form>
+						<a href="#" class="icon-close message-resp__reply-close"></a>
+						<div class="message-resp__reply-title">
+							<strong>Your reply</strong> via SMS
+						</div>
+						<textarea placeholder="Start here" class="message-resp__field"></textarea>
+						<div class="message-resp__reply-btns">
+							<button class="btn btn--orange">
+								<span class="icon-sms"></span>
+								Send
+							</button>
+							<button class="btn btn--naked">Discard</button>
+						</div>
+					</form>
+				</div>
+				<div class="message-resp__item">
+					<div class="message-resp__title">
+						<div class="message-resp__heading">
+							<h3>Dmitri Kozhevnikov</h3>
+							<p>786 617 9058</p>
+							<span class="label label--green">Hot Lead</span>
+						</div>
+						<div class="message-resp__info">
+							<span class="day">10 days ago</span>
+							<p>via SMS</p>
+							<div class="badge__icon badge--sms"></div>
+						</div>
+					</div>
+					<div class="message-resp__body">
+						<div class="message-resp__text">
+							<p>Yes - you can call me tomorrow at 4pm. Thanks</p>
+						</div>
+						<button class="btn btn--orange">
+							<span class="icon-sms"></span>
+							Quick reply
+						</button>
+					</div>
+				</div>
+				<div class="message-resp__item">
+					<div class="message-resp__title">
+						<div class="message-resp__heading">
+							<h3>Dmitri Kozhevnikov</h3>
+							<p>786 617 9058</p>
+							<span class="label label--green">Hot Lead</span>
+						</div>
+						<div class="message-resp__info">
+							<span class="day">10 days ago</span>
+							<p>via Email</p>
+							<div class="badge__icon badge-email"></div>
+						</div>
+					</div>
+					<div class="message-resp__body">
+						<div class="message-resp__text">
+							<p>Good day.  Perhaps I could call you later on today when I am mobile and we could discuss.  Perhaps around 5:00 PM CST?</p>
+						</div>
+						<button class="btn btn--blue">
+							<span class="icon-envelope"></span>
+							Quick reply
+						</button>
+					</div>
+				</div>
+				<p class="message-resp__pagination">Displaying 12 of 12 leads</p>
+			</div>
+			<div class="message-resp__view">
+				<p class="message-resp__preview">Click to any response <br/> to view full conversation</p>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<ul class="footer__nav">
+			<li><a href="#">Terms of Service</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+		</ul>
+		<p class="footer__info">© 2017 SalesRep.ai.  All rights reserved. <a href="#" class="footer__logo"><img src="images/footer-logo.png" alt="SalesRep"/></a></p>
+	</div>
+</footer>
+<a href="#" class="help"><span>Call for help</span></a>
+</div>
+
+</body>
+</html>

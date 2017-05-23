@@ -1,0 +1,185 @@
+.message-resp {
+	flex: 1 0 auto;
+	display: flex;
+	margin: 0 20px 50px;
+
+	.container {
+		background: #454545;
+		flex: 1 0 auto;
+		border-radius: $radius;
+		display: flex;
+		padding: 0;
+		max-width: 1326px;
+
+		@include until($bp-large) {
+			display: block;
+		}
+	}
+
+	&__messages {
+		width: 45%;
+		padding: 5px;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+
+		@include until($bp-large) {
+			width: auto;
+		}
+	}
+
+	&__item {
+		margin-bottom: 5px;
+		border-radius: $radius;
+		background: $color-white;
+	}
+
+	&__title {
+		@extend .flexible-row;
+		border-bottom: 1px solid #e5e5e5;
+		padding: 12px 12px 12px 17px;
+		align-items: baseline;
+	}
+
+	&__heading {
+		margin-right: 10px;
+		display: flex;
+		align-items: baseline;
+		font-weight: 300;
+
+		h3 {
+			margin: 0 12px 0 0;
+			font-weight: bold;
+			font-size: 15px;
+		}
+
+		p {
+			margin: 0 15px 0 0;
+		}
+	}
+
+	&__info {
+		font-size: 13px;
+		display: flex;
+		align-items: baseline;
+		
+		p {
+			margin: 0 8px;
+		}
+	}
+
+	&__body {
+		padding: 14px 12px 11px 17px;
+		@extend .flexible-row;
+		align-items: flex-end;
+		max-width: 100%;
+	}
+
+	&__text {
+		margin-right: 30px;
+		font-size: 13px;
+		font-weight: 300;
+	}
+
+	&__reply {
+		align-self: flex-end;
+		width: 70%;
+		position: relative;
+		background: #dadada;
+		border-radius: $radius;
+		box-sizing: border-box;
+		padding: 12px;
+		margin-bottom: 5px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			right: 68px;
+			top: -8px;
+			height: 0;
+			display: block;
+			border: 4px solid transparent;
+			border-bottom-color: #dadada;
+		}
+
+		> .badge__icon {
+			position: absolute;
+			left: -36px;
+			top: 0;
+		}
+	}
+
+	&__reply-close {
+		position: absolute;
+		color: #989898;
+		top: 13px;
+		right: 15px;
+		text-decoration: none;
+		font-size: 10px;
+	}
+
+	&__reply-title {
+		font-weight: 300;
+		font-size: 15px;
+		margin-bottom: 6px;
+	}
+
+	&__field {
+		margin-bottom: 10px;
+		height: 90px;
+	}
+
+	&__pagination {
+		text-align: center;
+		margin: 10px 0;
+		color: #e9e9e9;
+	}
+
+	&__view {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 55%;
+		margin: 1px;
+		position: relative;
+
+		@include until($bp-large) {
+			width: auto;
+		}
+	}
+	
+	&__preview {
+		margin: 0;
+		color: $color-white;
+		text-align: center;
+	}
+
+	&__wrapper {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #e9e9e9;
+		border-radius: 0 $radius $radius 0;
+
+		@include until($bp-large) {
+			position: static;
+			width: 100%;
+		}
+	}
+
+	&__holder {
+		height: 100%;
+		overflow: auto;
+
+		@include until($bp-large) {
+			height: auto;
+			overflow: visible;
+
+			.modal__body {
+				padding: 20px;
+			}
+		}
+	}
+}

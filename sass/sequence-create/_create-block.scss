@@ -1,0 +1,83 @@
+.create-block {
+	background: #454545;
+	padding: 27px 0;
+	flex: 1 0 auto;
+
+	&__aside {
+		margin-left: -9999px;
+		padding-left: 9975px;
+		background: $color-white;
+		border-radius: $radius;
+		width: 270px;
+		margin-right: 33px;
+
+		@include until($bp-medium) {
+			width: auto;
+			margin: 0 0 20px;
+			padding: 0;
+		}
+	}
+
+	&__aside-holder {
+		padding: 35px 28px 35px 0;
+
+		@include until($bp-medium) {
+			padding: 20px;
+		}
+	}
+
+	&__button-main,
+	&__button {
+		border: 1px solid #a0a0a0;
+		border-radius: $radius;
+		margin-bottom: 5px;
+		color: $color-black;
+		text-decoration: none;
+		display: block;
+		padding: 10px 15px;
+
+		.badge {
+			margin-right: 16px;
+		}
+	}
+
+	&__button-main {
+		font-weight: 300;
+		font-size: 15px;
+		padding-top: 13px;
+		padding-bottom: 13px;
+	}
+
+	.container {
+		display: flex;
+		width: 100%;
+
+		@include until($bp-medium) {
+			display: block;
+		}
+	}
+
+	&__main {
+		border-radius: $radius;
+		background: #ddd;
+		padding: 30px 25px;
+		flex: 1 0 auto;
+	}
+
+	&__title {
+		margin-bottom: 18px;
+
+		h2 {
+			margin: 0;
+			font-size: 30px;
+			font-weight: bold;
+
+			span {
+				margin-right: 12px;
+				color: $color-blue;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+}

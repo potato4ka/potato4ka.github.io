@@ -37,50 +37,9 @@
 		}
 	}
 
-	&__symbol {
+	.badge {
 		display: block;
 		margin-right: 10px;
-		position: relative;
-	}
-
-	&__icon {
-		@extend %icon-base-styles;
-		border-radius: 50%;
-		color: $color-white;
-		text-align: center;
-		line-height: 25px;
-		width: 26px;
-		height: 26px;
-		display: block;
-	}
-
-	&__icon-call {
-		@extend .icon-phone;
-		background: $color-green;
-	}
-
-	&__icon-email {
-		@extend .icon-envelope;
-		background: $color-blue;
-	}
-
-	&__icon-sms {
-		@extend .icon-sms;
-		background: #e7682a;
-	}
-
-	&__rec {
-		@extend %icon-base-styles;
-		@extend .icon-record;
-		position: absolute;
-		top: -5px;
-		right: -5px;
-		font-size: 11px;
-		line-height: 6px;
-		color: #ff4800;
-		padding: 1px;
-		background: $color-white;
-		border-radius: 2px;
 	}
 
 	&__summary {
@@ -109,7 +68,7 @@
 		flex-direction: row-reverse;
 		align-self: flex-end;
 
-		#{$root}__symbol {
+		.badge {
 			margin-right: 0;
 			margin-left: 10px;
 		}

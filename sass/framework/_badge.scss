@@ -1,0 +1,51 @@
+.badge {
+	position: relative;
+	display: inline-block;
+
+	&__icon {
+		@extend %icon-base-styles;
+		border-radius: 50%;
+		color: $color-white;
+		text-align: center;
+		line-height: 25px;
+		width: 26px;
+		height: 26px;
+		display: block;
+	}
+
+	&--call {
+		@extend .icon-phone;
+		background: $color-green;
+	}
+
+	&--email {
+		@extend .icon-envelope;
+		background: $color-blue;
+	}
+
+	&--sms {
+		@extend .icon-sms;
+		background: $color-orange;
+	}
+
+	&--add {
+		@extend .icon-add;
+		background: $color-black;
+		vertical-align: middle;
+	}
+
+	&__rec {
+		@extend %icon-base-styles;
+		@extend .icon-record;
+		position: absolute;
+		top: -5px;
+		right: -5px;
+		font-size: 11px;
+		line-height: 6px;
+		color: #ff4800;
+		padding: 1px;
+		background: $color-white;
+		border-radius: 2px;
+	}
+}
+

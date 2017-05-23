@@ -1,0 +1,122 @@
+.sequences {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0 -10px;
+	align-items: stretch;
+
+	&__col {
+		flex: auto;
+		width: 25%;
+		max-width: 25%;
+		padding: 10px;
+		box-sizing: border-box;
+
+		@include until($bp-xl) {
+			width: 50%;
+			max-width: 50%;
+		}
+
+		@include until($bp-medium) {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+
+	&__item {
+		border-radius: $radius;
+		background: $color-white;
+		height: 100%;
+	}
+
+	&__header {
+		padding: 15px;
+
+		h2 {
+			margin: 0;
+			font-weight: bold;
+			font-size: 18px;
+		}
+
+		.icon-sequences {
+			color: $color-blue;
+			margin-right: 8px;
+			vertical-align: middle;
+			display: inline-block;
+		}
+	}
+
+	&__summary {
+		background: #f4f4f4;
+		padding: 15px 10px 15px 0;
+		width: 100%;
+		display: flex;
+		box-sizing: border-box;
+
+		dl {
+			margin: 0;
+			width: 25%;
+			box-sizing: border-box;
+			padding-left: 18px;
+		}
+
+		dt {
+			display: inline-block;
+		}
+
+		dd {
+			display: inline-block;
+			margin: 0;
+			font-weight: bold;
+		}
+	}
+
+	&__calendar {
+		padding: 20px 16px 42px;
+	}
+
+	&__row {
+		margin-bottom: 7px;
+	}
+
+	&__day {
+		display: inline-block;
+		background: #dedede;
+		text-align: center;
+		border-radius: $radius;
+		margin-right: 16px;
+		width: 74px;
+		box-sizing: border-box;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 18px;
+		padding: 5px;
+		text-transform: uppercase;
+	}
+
+	&__icons {
+		position: relative;
+		display: inline-block;
+
+		&:before {
+			content: '';
+			display: block;
+			height: 1px;
+			left: 0;
+			right: 0;
+			top: 50%;
+			background: #b2b2b2;
+			position: absolute;
+		}
+
+		.badge {
+			display: inline-block;
+			position: relative;
+			margin-left: 11px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}

@@ -116,6 +116,10 @@
 		padding: 28px 50px;
 		font-size: 26px;
 
+		&:hover {
+			background: #cddce7;
+		}
+
 		@include until($bp-medium) {
 			display: block;
 			text-align: center;
@@ -150,10 +154,6 @@
 	&__footer-close {
 		font-size: 24px;
 		text-decoration: none;
-
-		&:hover {
-			text-decoration: underline;
-		}
 	}
 
 	&__body {
@@ -193,4 +193,8 @@
 		overflow-x: hidden;
 		padding-right: 10px;
 	}
+}
+
+body.modal-open {
+	overflow: hidden;
 }
