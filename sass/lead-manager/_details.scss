@@ -4,7 +4,7 @@
 
 	&__wrap {
 		display: flex;
-		padding: 26px 50px;
+		padding: 34px 46px 29px;
 		box-sizing: border-box;
 		width: 100%;
 		justify-content: space-between;
@@ -26,7 +26,22 @@
 
 	&__col {
 		flex: 1;
-		margin-right: 40px;
+		width: auto;
+		max-width: 100%;
+
+		&:last-child {
+			dl {
+				padding-left: 26px;
+			}
+
+			dt {
+				width: 45%;
+			}
+
+			dd {
+				width: 55%;
+			}
+		}
 	}
 
 	dl {
@@ -38,15 +53,15 @@
 	}
 
 	dt {
-		padding-bottom: 8px;
-		width: 40%;
+		padding-bottom: 6px;
+		width: 33%;
 		font-weight: normal;
 	}
 
 	dd {
 		margin: 0;
-		width: 60%;
-		padding-bottom: 8px;
+		padding-bottom: 6px;
 		padding-top: 2px;
+		width: 67%;
 	}
 }

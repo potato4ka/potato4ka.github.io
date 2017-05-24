@@ -9,7 +9,7 @@
 		border-radius: $radius;
 		display: flex;
 		padding: 0;
-		max-width: 1326px;
+		max-width: $page-width;
 
 		@include until($bp-large) {
 			display: block;

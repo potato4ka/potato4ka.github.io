@@ -1,6 +1,7 @@
 .lead-table {
 	width: 100%;
 	background: #ededed;
+	line-height: 20px;
 
 	thead {
 		background: #f8f8f8;
@@ -8,7 +9,7 @@
 
 	th,
 	td {
-		padding: 12px 5px 12px 18px;
+		padding: 12px 5px 4px 18px;
 		border: none;
 
 		&:not(:first-child) {
@@ -20,10 +21,18 @@
 		text-align: left;
 		font-size: 14px;
 		font-weight: normal;
+
+		&:first-child {
+			padding-left: 26px;
+		}
 	}
 
 	td {
 		font-weight: 300;
+
+		&:first-child {
+			padding-left: 22px;
+		}
 
 		&:nth-child(2){
 			font-weight: normal;
@@ -54,9 +63,10 @@
 	}
 
 	[class^="icon-"] {
-		font-size: 11px;
-		margin-right: 6px;
+		font-size: 8px;
+		margin-right: 3px;
 		vertical-align: middle;
+		transform: translateY(1px);
 	}
 
 	.icon-success {
@@ -81,7 +91,7 @@
 	&__pagination {
 		text-align: center;
 		font-size: 12px;
-		margin: 38px 0 0;
+		margin: 46px 0 0;
 	}
 }
 

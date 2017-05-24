@@ -77,3 +77,5 @@ p {
 [class*=" icon-"] {
 	@extend %icon-base-styles;
 }
+
+*{-webkit-font-smoothing: antialiased;}

@@ -5,7 +5,7 @@
 	flex-direction: column;
 
 	&__title {
-		margin: 20px 0 15px;
+		margin: 17px 0 15px;
 
 		h3 {
 			display: inline-block;
@@ -25,8 +25,8 @@
 
 	&__row {
 		display: flex;
-		width: 70%;
-		margin: 2px 0;
+		width: 72.5%;
+		margin: 3px 0;
 		align-items: flex-start;
 		justify-content: space-between;
 
@@ -44,7 +44,7 @@
 
 	&__summary {
 		@extend .flexible-row;
-		padding: 5px 13px;
+		padding: 6px 12px;
 		font-size: 13px;
 		font-weight: 300;
 		border-radius: $radius;
@@ -85,6 +85,15 @@
 			padding-top: 18px;
 			padding-bottom: 18px;
 		}
+
+		+ #{$root}--message,
+		+ #{$root}--info {
+			margin-top: 5px;
+		}
+
+		+ #{$root}__notification {
+			margin-top: 0;
+		}
 	}
 
 	&--message {
@@ -97,7 +106,13 @@
 		#{$root}__message-title {
 			position: relative;
 			border-bottom: 1px solid #d7e1e4;
-			padding: 0 16px 16px;
+			padding: 0 16px 6px;
+		}
+
+		&#{$root}--answer {
+			.badge {
+				transform: translateY(10px);
+			}
 		}
 
 		#{$root}__message-heading {
@@ -120,6 +135,11 @@
 		border-radius: $radius;
 		padding: 5px 14px 5px 10px;
 		@extend .flexible-row;
+
+		+ #{$root}--message,
+		+ #{$root}--info {
+			margin-top: 20px;
+		}
 	}
 
 	&__notification-text {
@@ -160,7 +180,7 @@
 		margin-bottom: 32px;
 
 		.btn {
-			margin-right: 4px;
+			margin-right: 3px;
 		}
 	}
 
@@ -177,6 +197,7 @@
 			padding: 12px;
 			position: relative;
 			display: block;
+			margin-right: 21px;
 		}
 
 		label {

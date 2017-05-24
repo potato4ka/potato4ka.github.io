@@ -41,8 +41,8 @@
 
 	&__close {
 		position: absolute;
-		top: 11px;
-		right: 11px;
+		top: 12px;
+		right: 12px;
 		color: #b2b2b2;
 		text-decoration: none;
 		z-index: 2;
@@ -63,7 +63,7 @@
 		justify-content: space-between;
 		align-items: flex-end;
 		width: 100%;
-		padding: 30px 50px 22px;
+		padding: 27px 50px 23px 46px;
 
 		@include until($bp-medium) {
 			display: block;
@@ -82,18 +82,19 @@
 		span {
 			font-weight: 300;
 			font-size: 30px;
+			margin-right: 6px;
 		}
 	}
 
 	&__nav {
 		list-style: none;
 		padding: 0;
-		margin: 0 0 10px;
+		margin: 0 0 6px;
 		font-size: 15px;
 
 		li {
 			display: inline-block;
-			margin-left: 25px;
+			margin-left: 21px;
 
 			@include until($bp-medium) {
 				&:first-child {
@@ -113,8 +114,9 @@
 		border-top: 1px solid #b4b4b4;
 		border-radius: 0 0 $radius $radius;
 		@extend .flexible-row;
-		padding: 28px 50px;
+		padding: 20px 50px;
 		font-size: 26px;
+		flex-shrink: 0;
 
 		&:hover {
 			background: #cddce7;
@@ -157,15 +159,16 @@
 	}
 
 	&__body {
-		padding: 25px 50px;
+		padding: 30px 47px 25px;
 		display: flex;
 		flex-direction: column;
 	}
 
 	&__headline {
 		border-bottom: 1px solid #a3a3a3;
-		padding-bottom: 18px;
+		padding-bottom: 16px;
 		@extend .flexible-row;
+		flex-shrink: 0;
 
 		h3 {
 			margin: 0;
@@ -176,7 +179,7 @@
 			span {
 				display: inline-block;
 				vertical-align: middle;
-				margin-right: 27px;
+				margin-right: 31px;
 				font-size: 18px;
 			}
 		}
@@ -191,7 +194,8 @@
 	&__content {
 		overflow-y: auto;
 		overflow-x: hidden;
-		padding-right: 10px;
+		margin-right: -35px;
+		padding-right: 35px;
 	}
 }
 

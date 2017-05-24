@@ -1,7 +1,7 @@
 .header {
 	background: $color-white;
 	box-shadow: $shadow;
-	padding: 24px 0 19px;
+	padding: 25px 0 18px;
 	position: relative;
 
 	.container {
@@ -16,13 +16,13 @@
 
 	img {
 		display: block;
-		width: 150px;
+		width: 161px;
 	}
 }
 
 .navigation {
 	flex: 1 0 auto;
-	margin: 0 35px;
+	margin: 1px 35px 0 66px;
 	font-size: 18px;
 
 	@include until($bp-large) {
@@ -38,7 +38,7 @@
 
 	li {
 		display: inline-block;
-		margin-left: 30px;
+		margin-left: 26px;
 
 		&:first-child {
 			margin-left: 0;
@@ -63,7 +63,7 @@
 	
 	span {
 		color: #8e8e8e;
-		margin-right: 9px;
+		margin-right: 7px;
 		font-size: 22px;
 		display: inline-block;
 		vertical-align: bottom;
@@ -84,6 +84,7 @@
 
 .user-tools {
 	position: relative;
+	margin-top: 3px;
 
 	&__name {
 		font-size: 18px;
@@ -95,9 +96,9 @@
 		}
 
 		span {
-			margin-left: 6px;
-			font-size: 11px;
-			vertical-align: top;
+			margin-left: 1px;
+			font-size: 10px;
+			vertical-align: baseline;
 		}
 	}
 }
