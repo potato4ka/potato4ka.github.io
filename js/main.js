@@ -9,24 +9,24 @@ $(document).ready(function() {
 		})
 	});
 
-	$('.modal-opener').each(function(){
+	$('.popup-opener').each(function(){
 		var $modal = $(this).attr('href');
 		var $page = $('.page');
 		var $body = $('body');
-		var $close = $($modal).find('.modal-close, .modal__overlay');
+		var $close = $($modal).find('.popup__close, .modal__footer, .popup__overlay');
 
 		$(this).click(function(e){
 			e.preventDefault();
 			$($modal).addClass('open');
 			$($page).addClass('blured');
-			$($body).addClass('modal-open');
+			$($body).addClass('popup-open');
 		});
 
 		$close.click(function(e){
 			e.preventDefault();
 			$($modal).removeClass('open');
 			$($page).removeClass('blured');
-			$($body).removeClass('modal-open');
+			$($body).removeClass('popup-open');
 		});
 	});
 

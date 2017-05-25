@@ -7,10 +7,15 @@
 		border-radius: 50%;
 		color: $color-white;
 		text-align: center;
-		line-height: 25px;
+		line-height: 24px;
 		width: 26px;
 		height: 26px;
 		display: block;
+
+		&:before {
+			display: inline-block;
+			margin-top: 1px;
+		}
 	}
 
 	&--call {
@@ -21,6 +26,7 @@
 	&--email {
 		@extend .icon-envelope;
 		background: $color-blue;
+		line-height: 23px;
 	}
 
 	&--sms {
@@ -32,6 +38,7 @@
 		@extend .icon-add;
 		background: $color-black;
 		vertical-align: middle;
+		font-size: 10px;
 	}
 
 	&__rec {

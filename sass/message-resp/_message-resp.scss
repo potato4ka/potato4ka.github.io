@@ -17,7 +17,7 @@
 	}
 
 	&__messages {
-		width: 45%;
+		width: 45.56%;
 		padding: 5px;
 		box-sizing: border-box;
 		display: flex;
@@ -69,21 +69,26 @@
 	}
 
 	&__body {
-		padding: 14px 12px 11px 17px;
 		@extend .flexible-row;
-		align-items: flex-end;
+		padding: 14px 12px 11px 17px;
 		max-width: 100%;
+
+		.btn {
+			align-items: flex-end;
+			padding: 2px 16px;
+		}
 	}
 
 	&__text {
 		margin-right: 30px;
 		font-size: 13px;
 		font-weight: 300;
+		line-height: 17px;
 	}
 
 	&__reply {
 		align-self: flex-end;
-		width: 70%;
+		width: 68.78%;
 		position: relative;
 		background: #dadada;
 		border-radius: $radius;
@@ -94,7 +99,7 @@
 		&:before {
 			content: '';
 			position: absolute;
-			right: 68px;
+			right: 64px;
 			top: -8px;
 			height: 0;
 			display: block;
@@ -121,7 +126,7 @@
 	&__reply-title {
 		font-weight: 300;
 		font-size: 15px;
-		margin-bottom: 6px;
+		margin-bottom: 4px;
 	}
 
 	&__field {
@@ -171,7 +176,9 @@
 
 	&__holder {
 		height: 100%;
-		overflow: auto;
+		display: inline-flex;
+		flex-direction: column;
+		width: 100%;
 
 		@include until($bp-large) {
 			height: auto;

@@ -1,0 +1,51 @@
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 150;
+	justify-content: center;
+	align-items: center;
+	color: #333;
+	font-weight: 300;
+	display: none;
+
+	&.open {
+		display: flex;
+	}
+
+	&__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0,0,0,0.2);
+	}
+
+	&__box {
+		width: 700px;
+		max-height: 616px;
+
+		@include until($bp-medium) {
+			width: auto;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		color: #b2b2b2;
+		text-decoration: none;
+		z-index: 2;
+		font-size: 12px;
+	}
+
+
+}
+
+body.popup-open {
+	overflow: hidden;
+}
