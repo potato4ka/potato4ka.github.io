@@ -9,7 +9,7 @@
 
 	th,
 	td {
-		padding: 12px 5px 4px 18px;
+		padding: 8px 5px 8px 18px;
 		border: none;
 
 		&:not(:first-child) {
@@ -21,6 +21,8 @@
 		text-align: left;
 		font-size: 14px;
 		font-weight: normal;
+		padding-bottom: 10px;
+		padding-top: 13px;
 
 		&:first-child {
 			padding-left: 26px;

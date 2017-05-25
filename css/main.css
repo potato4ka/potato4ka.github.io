@@ -1053,7 +1053,7 @@ background-color: #666;*/
     background: #f8f8f8; }
   .lead-table th,
   .lead-table td {
-    padding: 12px 5px 4px 18px;
+    padding: 8px 5px 8px 18px;
     border: none; }
     .lead-table th:not(:first-child),
     .lead-table td:not(:first-child) {
@@ -1061,7 +1061,9 @@ background-color: #666;*/
   .lead-table th {
     text-align: left;
     font-size: 14px;
-    font-weight: normal; }
+    font-weight: normal;
+    padding-bottom: 10px;
+    padding-top: 13px; }
     .lead-table th:first-child {
       padding-left: 26px; }
   .lead-table td {
