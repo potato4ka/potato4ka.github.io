@@ -9,8 +9,18 @@ $(document).ready(function() {
 		})
 	});
 
+	$('.slide-box').each(function(){
+		var $opener = $(this).find('.slide-box__opener');
+		var $content = $(this).find('.slide-box__content');
+
+		$opener.click(function (e) {
+			$(this).next($content).slideToggle();
+			event.preventDefault();
+		})
+	});
+
 	$('.popup-opener').each(function(){
-		var $modal = $(this).attr('href');
+		var $modal = $('#' + $(this).attr('data-value'));
 		var $page = $('.page');
 		var $body = $('body');
 		var $close = $($modal).find('.popup__close, .modal__footer, .popup__overlay');
@@ -44,6 +54,26 @@ $(document).ready(function() {
 		$close.click(function(e){
 			e.preventDefault();
 			$($modal).slideUp();
+		});
+	});
+
+	$('.dialog--toggle').each(function(){
+		var $opener = $(this).find('.dialog__opener');
+		var $close = $(this).find('.dialog__close, .dialog__field-close');
+		var $content = $(this).find('.dialog__content');
+		var $box = $(this);
+		$opener.click(function(e){
+			e.preventDefault();
+			$($content).show();
+			$($opener).hide();
+			$($box).addClass('dialog--textfield');
+		});
+
+		$close.click(function(e){
+			e.preventDefault();
+			$($content).hide();
+			$($opener).show();
+			$($box).removeClass('dialog--textfield');
 		});
 	});
 });

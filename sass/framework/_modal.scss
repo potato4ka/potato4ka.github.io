@@ -116,6 +116,9 @@
 		padding: 30px 47px 25px;
 		display: flex;
 		flex-direction: column;
+		overflow-y: auto;
+		overflow-x: hidden;
+		margin-right: 12px;
 	}
 
 	&__headline {
@@ -143,12 +146,5 @@
 			color: #999;
 			font-size: 9px;
 		}
-	}
-
-	&__content {
-		overflow-y: auto;
-		overflow-x: hidden;
-		margin-right: -35px;
-		padding-right: 35px;
 	}
 }

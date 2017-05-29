@@ -37,6 +37,10 @@
 		}
 	}
 
+	p {
+		margin: 0;
+	}
+
 	.badge {
 		display: block;
 		margin-right: 10px;
@@ -55,12 +59,6 @@
 			&:hover {
 				text-decoration: underline;
 			}
-		}
-	}
-
-	&--new {
-		#{$root}__summary {
-			background: #f6f6f6;
 		}
 	}
 
@@ -94,6 +92,10 @@
 		+ #{$root}__notification {
 			margin-top: 0;
 		}
+	}
+
+	&--info {
+		align-items: center;
 	}
 
 	&--message {
@@ -133,13 +135,21 @@
 		background: #d3d3d3;
 		margin: 20px 0;
 		border-radius: $radius;
-		padding: 5px 14px 5px 10px;
-		@extend .flexible-row;
 
 		+ #{$root}--message,
 		+ #{$root}--info {
 			margin-top: 20px;
 		}
+	}
+
+	&__notification-wrapper {
+		padding: 5px 14px 5px 10px;
+		@extend .flexible-row;
+		cursor: pointer;
+	}
+
+	&__notification-content {
+		padding: 10px;
 	}
 
 	&__notification-text {
@@ -189,6 +199,47 @@
 		margin: 0 12px 0 0;
 	}
 
+	&__field-close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		color: #acacac;
+		font-size: 9px;
+		text-decoration: none !important;
+	}
+
+	&--replied {
+		#{$root}__summary {
+			box-shadow: 0 0 2px $color-blue;
+			background: $color-white;
+			color: $color-black;
+		}
+		#{$root}__day {
+			color: $color-black;
+		}
+	}
+
+	&--toggle {
+		transition: all .15s ease;
+
+		#{$root}__summary {
+			display: block;
+			transition: all .15s ease;
+			background: #f6f6f6;
+			padding: 0;
+		}
+	}
+
+	&__opener {
+		@extend .flexible-row;
+		padding: 6px 12px;
+		cursor: pointer;
+	}
+
+	&__content {
+		display: none;
+	}
+
 	&--textfield {
 		width: 100%;
 
@@ -209,25 +260,6 @@
 		textarea {
 			margin-bottom: 10px;
 			min-height: 90px;
-		}
-	}
-
-	&__field-close {
-		position: absolute;
-		top: 15px;
-		right: 15px;
-		color: #acacac;
-		font-size: 9px;
-	}
-
-	&--replied {
-		#{$root}__summary {
-			box-shadow: 0 0 2px $color-blue;
-			background: $color-white;
-			color: $color-black;
-		}
-		#{$root}__day {
-			color: $color-black;
 		}
 	}
 }

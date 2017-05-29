@@ -17,6 +17,7 @@ input,
 textarea,
 select {
 	font: 15px Roboto, sans-serif;
+	outline: none;
 }
 
 form,
@@ -38,11 +39,11 @@ textarea {
 	resize: none;
 	box-sizing: border-box;
 	font-size: 15px;
+	outline: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 0 2px;
 }
 
 p {
@@ -79,3 +80,8 @@ p {
 }
 
 *{-webkit-font-smoothing: antialiased;}
+
+.toggle-box__content,
+.slide-box__content {
+	display: none;
+}

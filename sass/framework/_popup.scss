@@ -27,6 +27,7 @@
 	&__box {
 		width: 700px;
 		max-height: 616px;
+		border-radius: $radius;
 
 		@include until($bp-medium) {
 			width: auto;

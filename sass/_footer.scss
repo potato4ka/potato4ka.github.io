@@ -1,8 +1,10 @@
 .footer {
 	background: #f0f0f0;
 	padding: 20px 0;
-	color: #666;
+	color: #b3b3b3;
 	font-size: 12px;
+	font-weight: 300;
+	line-height: 16px;
 
 	.container {
 		@extend .flexible-row;
@@ -30,9 +32,9 @@
 				width: 1px;
 				height: 10px;
 				display: inline-block;
-				background: #666;
+				background: #b3b3b3;
 				margin-right: 6px;
-				vertical-align: bottom;
+				vertical-align: baseline;
 			}
 
 			&:first-child {
@@ -45,7 +47,7 @@
 		}
 
 		a {
-			color: #666;
+			color: #b3b3b3;
 			text-decoration: none;
 
 			&:hover {
@@ -56,15 +58,13 @@
 	
 	&__info {
 		margin: 0;
-		transform: translateY(2px);
+		display: flex;
+		justify-content: center;
 	}
 
 	&__logo {
-		vertical-align: baseline;
-		display: inline-block;
 		margin-left: 10px;
-		transform: translateY(1px);
-		
+
 		img {
 			display: block;
 			width: 91px;

@@ -22,7 +22,7 @@
 
 .navigation {
 	flex: 1 0 auto;
-	margin: 1px 35px 0 66px;
+	margin: 3px 35px 0 66px;
 	font-size: 18px;
 
 	@include until($bp-large) {
@@ -36,37 +36,35 @@
 		font-weight: 300;
 	}
 
+	a {
+		color: #333;
+		text-decoration: none;
+
+	}
+
+	span {
+		color: #8e8e8e;
+		margin-right: 7px;
+		font-size: 21px;
+		display: inline-block;
+		vertical-align: bottom;
+		transform: translateY(2px);
+	}
+
 	li {
 		display: inline-block;
-		margin-left: 26px;
+		margin-left: 28px;
 
 		&:first-child {
 			margin-left: 0;
 		}
 
 		&:hover {
+			span,
 			a {
-				color: $color-black;
-			}
-
-			span {
 				color: $color-blue;
 			}
 		}
-	}
-
-	a {
-		color: #333;
-		text-decoration: none;
-
-	}
-	
-	span {
-		color: #8e8e8e;
-		margin-right: 7px;
-		font-size: 22px;
-		display: inline-block;
-		vertical-align: bottom;
 	}
 
 	.active {
@@ -96,9 +94,10 @@
 		}
 
 		span {
-			margin-left: 1px;
-			font-size: 10px;
-			vertical-align: baseline;
+			margin-left: 2px;
+			font-size: 9px;
+			transform: translateY(-3px);
+			display: inline-block;
 		}
 	}
 }

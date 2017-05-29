@@ -11,6 +11,7 @@
 		padding: 10px;
 		box-sizing: border-box;
 
+
 		@include until($bp-xl) {
 			width: 50%;
 			max-width: 50%;
@@ -26,6 +27,12 @@
 		border-radius: $radius;
 		background: $color-white;
 		height: 100%;
+		transition: all .15s ease;
+
+		&:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 3px 4px rgba(0, 0, 0, 0.02);
+		}
 	}
 
 	&__header {
@@ -129,6 +136,23 @@
 			&:first-child {
 				margin-left: 0;
 			}
+		}
+	}
+
+	&__edit {
+		float: right;
+		background: #e5f2fd;
+		border-radius: $radius;
+		margin-left: 10px;
+		border: 1px solid #b2dcf6;
+		text-decoration: none;
+		color: #007ecb;
+		font-size: 10px;
+		line-height: 12px;
+		padding: 5px 12px;
+
+		&:hover {
+			background: #b2dcf6;
 		}
 	}
 }
