@@ -1821,3 +1821,8 @@ body.popup-open {
           padding: 20px; } }
   .message-resp__box {
     padding: 12px; }
+  .message-resp .modal__footer {
+    position: absolute;
+    bottom: 0; }
+  .message-resp .modal__body {
+    margin-bottom: 62px; }

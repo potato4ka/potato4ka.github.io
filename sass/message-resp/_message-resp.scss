@@ -194,4 +194,13 @@
 	&__box {
 		padding: 12px;
 	}
+
+	.modal__footer {
+		position: absolute;
+		bottom: 0;
+	}
+
+	.modal__body {
+		margin-bottom: 62px;
+	}
 }
