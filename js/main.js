@@ -96,8 +96,9 @@ $(document).ready(function() {
 		});
 
 		var $messageOpener = $(this).find('.message-resp__title');
-		var $modal = $('#' + $(this).attr('data-value'));
 		var $modalAll = $('.message-resp__wrapper');
+		var $modal = $('#' + $(this).attr('data-value'));
+		/*$modalAll.splice(0, 1, $modal);*/
 
 		$messageOpener.click(function(e){
 			$($modalAll).hide();
