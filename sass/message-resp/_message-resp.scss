@@ -39,6 +39,7 @@
 		border-bottom: 1px solid #e5e5e5;
 		padding: 12px 12px 12px 17px;
 		align-items: baseline;
+		cursor: pointer;
 	}
 
 	&__heading {
@@ -92,9 +93,8 @@
 		position: relative;
 		background: #dadada;
 		border-radius: $radius;
-		box-sizing: border-box;
-		padding: 12px;
 		margin-bottom: 5px;
+		display: none;
 
 		&:before {
 			content: '';
@@ -167,6 +167,7 @@
 		right: 0;
 		background: #e9e9e9;
 		border-radius: 0 $radius $radius 0;
+		display: none;
 
 		@include until($bp-large) {
 			position: static;
@@ -188,5 +189,9 @@
 				padding: 20px;
 			}
 		}
+	}
+
+	&__box {
+		padding: 12px;
 	}
 }

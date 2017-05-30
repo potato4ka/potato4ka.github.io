@@ -5,8 +5,6 @@
 *::-webkit-scrollbar-thumb {
 	border-radius: 4px;
 	width: 8px;
-	background-color: #666;
+	background: #666;
+	transition: all .3s ease;
 }
-/*
-width: 8px;
-background-color: #666;*/

@@ -76,4 +76,39 @@ $(document).ready(function() {
 			$($box).removeClass('dialog--textfield');
 		});
 	});
+
+	$('.message-resp__item').each(function(){
+		var $opener = $(this).find('.btn-opener');
+		var $close = $(this).next('.message-resp__reply').find('.message-resp__reply-close, .btn-close');
+		var $content = $(this).next('.message-resp__reply');
+		$opener.click(function(e){
+			e.preventDefault();
+			$($content).slideDown();
+			$(this).attr('disabled', true);
+			$(this).addClass('btn--grey');
+		});
+
+		$close.click(function(e){
+			e.preventDefault();
+			$($content).slideUp();
+			$($opener).attr('disabled', false);
+			$($opener).removeClass('btn--grey');
+		});
+
+		var $messageOpener = $(this).find('.message-resp__title');
+		var $modal = $('#' + $(this).attr('data-value'));
+		var $modalAll = $('.message-resp__wrapper');
+
+		$messageOpener.click(function(e){
+			$($modalAll).hide();
+			if ($($modal).hasClass('opened')) {
+				$($modal).hide();
+				$($modal).removeClass('opened');
+			} else {
+				$($modal).addClass('opened');
+				$($modal).show();
+			}
+			e.preventDefault();
+		});
+	});
 });
