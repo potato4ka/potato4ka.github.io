@@ -157,6 +157,10 @@
 		margin: 0;
 		color: $color-white;
 		text-align: center;
+
+		@include until($bp-large) {
+			display: none;
+		}
 	}
 
 	&__wrapper {
@@ -172,6 +176,7 @@
 		@include until($bp-large) {
 			position: static;
 			width: 100%;
+			border-radius: 0 0 $radius $radius;
 		}
 	}
 
@@ -180,6 +185,7 @@
 		display: inline-flex;
 		flex-direction: column;
 		width: 100%;
+		border-radius: $radius;
 
 		@include until($bp-large) {
 			height: auto;
@@ -198,9 +204,19 @@
 	.modal__footer {
 		position: absolute;
 		bottom: 0;
+		border-radius: 0 0 $radius $radius;
+
+		@include until($bp-large) {
+			position: relative;
+		}
 	}
 
 	.modal__body {
 		margin-bottom: 62px;
+
+
+		@include until($bp-large) {
+			margin-bottom: 0;
+		}
 	}
 }
